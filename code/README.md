@@ -3,8 +3,8 @@
 ## Overview
 
 This project implements a distributed mathematics service using UNIX RPC. It includes server and client programs for performing statistical calculations over the network. The project consists of three main components:
-1. `stats_serv`: The server that performs the statistical calculations.
-2. `stats_clnt`: The client that communicates with the server using RPC.
+1. `stats_server`: The server that performs the statistical calculations.
+2. `stats_client`: The client that communicates with the server using RPC.
 3. `socket_clnt`: An additional client that connects using a raw socket.
 
 ## Prerequisites
@@ -24,10 +24,10 @@ To compile the project, follow these steps:
    ```sh
    make
 ### To start the server, use the following command:
-./stats_serv
+./stats_server
 
 ### To run the RPC client, use the following command:
-./stats_clnt <port> localhost
+./stats_client <port> localhost
 
 ### Running the Socket Client
 To run the socket client, use the following command:
